@@ -1,15 +1,30 @@
 {
   "name": "allurerep",
   "version": "1.0.0",
-  "description": "",
+  "description": "Playwright Page Object Model suite for SauceDemo",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.63.0",
-    "@types/node": "^26.6.2",
-    "allure-commandline": "^2.46.1",
-    "allure-playwright": "^3.12.2"
+    "@types/node": "^26.5.1",
+    "@types/pg": "^8.23.1",
+    "allure": "^3.17.0",
+    "allure-commandline": "^2.43.0",
+    "allure-playwright": "^3.12.1"
+  },
+  "dependencies": {
+    "pg": "^8.23.0"
   }
 }
